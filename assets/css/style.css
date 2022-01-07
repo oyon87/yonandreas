@@ -53,12 +53,17 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 	font-weight: 800;
 	font-family: "Poppins", sans-serif;
+	text-shadow: 0 0 20px #18d26e;
 }
-#header h1 a,
-#header h1 a:hover {
+#header h1 a {
 	color: #fff;
-	line-height: 1;
+}
+#header h1 a:hover {
+	color: #18d26e;
+	list-style: 1;
 	display: inline-block;
+	text-shadow: 0 0 30px #18d26e;
+	filter: blur(0.8px);
 }
 #header h2 {
 	font-size: 27px;
@@ -345,9 +350,17 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
+.about-me .image {
+	background-color: #18d36e;
+	padding: 3px;
+	/*border-radius: 50%;*/
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
 .about-me img {
-	border: 2px solid #18d36e;
-	border-radius: 31% 69% 16% 84% / 73% 37% 63% 27%; 
+	/*border: 5px solid #18d36e;*/
+	/*border-radius: 31% 69% 16% 84% / 73% 37% 63% 27%; */
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+	/*border-radius: 50%;*/
 }
 
 /*=== Skills ===*/
