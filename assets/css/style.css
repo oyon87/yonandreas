@@ -4,7 +4,6 @@ body {
 	background-color: #040404;
 	color: #fff;
 	position: relative;
-	background: transparent;
 }
 body::before {
 	content: "";
@@ -16,6 +15,7 @@ body::before {
 	top: 0;
 	height: 100vh;
 	z-index: -1;
+	opacity: .7;
 }
 @media (min-width: 1024px) {
 	body::before{
@@ -122,11 +122,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*=== Navigation Menu ===*/
 .nav-menu {
-	margin-top: -450px;
-	margin-left: 49%;
+	position: fixed;
+	top: 27px;
+	right: 120px;
 }
 .nav-menu ul {
 	display: flex;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -140,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: rgba(255, 255, 255, 0.7);
 	font-size: 16px;
 	font-family: "Poppins", sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 }
 .nav-menu a::before {
 	content: "";
@@ -158,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li:hover > a::before,
 .nav-menu .active > a::before {
 	visibility: visible;
-	width: 25px;
+	width: 100%;
 }
 .nav-menu a:hover,
 .nav-menu .active > a,
@@ -281,7 +283,7 @@ section.section-show {
   top: 100px;
   bottom: auto;
   opacity: 1;
-  padding-bottom: 45px;
+  padding-bottom: 55px;
 }
 
 section .container {
@@ -295,6 +297,7 @@ section .container {
   }
   section.section-show {
     top: 80px;
+    padding-bottom: 4em;
   }
 }
 
@@ -354,6 +357,7 @@ section .container {
 	background-color: #18d36e;
 	padding: 3px;
 	/*border-radius: 50%;*/
+	object-fit: cover;
 	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 .about-me img {
