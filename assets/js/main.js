@@ -110,15 +110,22 @@
   });
 
   // Image Popup
-  $('.image-link').magnificPopup({type:'image'});
+  $('.image-link').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+	});
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".owl-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     margin: 15,
     dots: true,
     nav: true,
-    loop: true,
+    loop: false,
     responsive: {
       0: {
         items: 1
