@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 15px;
+  top: 20px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -189,19 +189,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mobile-nav {
 	position: fixed;
-	top: 55px;
+	top: 60px;
 	right: 15px;
-	bottom: 15px;
+	bottom: auto;
 	left: 15px;
 	z-index: 9999;
 	overflow-y: auto;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 1);
 	transition: ease-in-out 0.2s;
 	opacity: 0;
 	visibility: hidden;
 	border-radius: 10px;
 	padding-top: 10px 0;
 	border: 2px solid rgba(255, 255, 255, 0.12); 
+	max-width: 600px;
+	margin: 0 auto;
 }
 .mobile-nav * {
 	margin: 0;
@@ -220,14 +222,28 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	color: #fff;
 	padding: 10px 20px;
-	font-weight: 500;
+	font-weight: 400;
 	outline: none;
+	text-transform: uppercase;
 }
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
 	color: #18d26e;
 	text-decoration: none;
+}
+
+@media (min-width: 770px) {
+	.mobile-nav-toggle {
+		top: 30px;
+		right: 30px;
+	}
+
+	.mobile-nav {
+		top: 80px;
+		margin: 0 auto;
+		max-width: 800px;
+	}
 }
 
 /*== Header Top ==*/
@@ -298,6 +314,7 @@ section .container {
   section.section-show {
     top: 80px;
     padding-bottom: 4em;
+    margin: 0 auto;
   }
 }
 
