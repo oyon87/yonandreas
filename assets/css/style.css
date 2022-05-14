@@ -422,7 +422,7 @@ section .container {
 .my-skills .progress-bar {
     width: 1px;
     height: 10px;
-    transition: 2s;
+    /* transition: 2s; */
     background-color: #18d26e;
 }
 
