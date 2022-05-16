@@ -392,9 +392,12 @@ section .container {
     margin-bottom: 0;
 }
 
-.about-me img {
+.about-me .image-wrapper {
+    width: 250px;
+    height: 250px;
     border: 2px solid #18d36e;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 /*=== Skills ===*/
@@ -598,7 +601,7 @@ section .container {
     padding: 0;
 }
 .project .card {
-    background-color: rgb(244, 244, 244, 0.1);
+    background-color: rgba(244, 244, 244, 0.1);
     overflow: hidden;
 }
 .card img {
